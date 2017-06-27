@@ -1,23 +1,43 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - src/scss/main.scss
+h1 {
+  padding: 3%;
+  margin: 0; }
 
-Backtrace:
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:484:in `read'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin.rb:109:in `method_missing'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/bin/sass:13:in `<top (required)>'
-C:/Ruby24-x64/bin/sass:22:in `load'
-C:/Ruby24-x64/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - src/scss/main.scss"; }
+.bg_yellow {
+  background: #EBB85D;
+  color: #FFF; }
+
+.bg_gray, #footer {
+  background: #3E3F40;
+  color: #FFF; }
+
+ul {
+  -webkit-padding-start: 0; }
+
+li {
+  list-style: none;
+  margin: 4px 0;
+  padding: 5px; }
+
+.aside {
+  background: #3E3F40;
+  color: #FFF;
+  text-align: center;
+  padding: 20px 5px; }
+
+.col {
+  float: left;
+  box-sizing: border-box;
+  border: 5px solid #FFF; }
+  .col.m3 {
+    width: 25%; }
+  .col.m6 {
+    width: 50%; }
+
+#footer {
+  margin: 5px 0;
+  clear: both; }
+  #footer p {
+    padding: 20px 0;
+    text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

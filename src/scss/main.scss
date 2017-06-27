@@ -1,0 +1,50 @@
+@import 'variable';
+@import 'resolutions';
+h1{
+    padding: 3%;
+    margin: 0;
+}
+.bg_yellow {
+    background: $background_yellow;
+    color: $text_light;
+}
+.bg_gray {
+    background: $background_gray;
+    color: $text_light;
+}
+ul{
+    -webkit-padding-start: 0;
+}
+li{
+    list-style: none;
+    margin: 4px 0;
+    padding: 5px;
+}
+.aside{
+    background: $background_gray;
+    color: $text_light;
+    text-align: center;
+    padding: 20px 5px;
+}
+.col{
+    float: left;
+    box-sizing: border-box;
+    border: 5px solid #FFF;
+    &.m3{
+        width: col(3);
+    }
+    &.m6{
+        width: col(6);
+    }
+}
+
+
+#footer{
+    @extend .bg_gray;
+    margin: 5px 0;
+    clear: both;
+    p{
+        padding: 20px 0;
+        text-align: center;
+    }
+}
