@@ -30,15 +30,7 @@ li{
     float: left;
     box-sizing: border-box;
     border: 5px solid #FFF;
-    &.m3{
-        width: col(3);
-    }
-    &.m6{
-        width: col(6);
-    }
 }
-
-
 #footer{
     @extend .bg_gray;
     margin: 5px 0;
@@ -47,4 +39,28 @@ li{
         padding: 20px 0;
         text-align: center;
     }
+}
+@media(min-width: 320px) and (max-width: 768px){
+    .first, .middle, .end{
+        width: col(12);
+    }
+}
+@media(min-width: 768px)and(max-width: 1024px){
+    .first{
+        width: col(3);
+    }
+    .middle{
+        width: col(9);
+    }
+    .end{
+        width: col(12);
+    }    
+}
+@media(min-width: 1024px){
+    .first, .end{
+        width: col(3);
+    }
+    .middle{
+        width: col(6);
+    }  
 }
